@@ -3,11 +3,11 @@ import ScrollAnimation from '@/components/ScrollAnimation';
 
 const Hero = () => {
   return (
-    <section className="relative isolate flex flex-col justify-between min-h-[100svh] md:min-h-screen overflow-hidden pt-20 sm:pt-24 pb-10">
+    <section className="relative isolate overflow-hidden pt-20 sm:pt-24 pb-12 sm:pb-16">
       {/* Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-white via-sky-400 to-sky-700 bg-scroll md:bg-fixed bg-cover bg-center pointer-events-none" />
 
-      <div className="relative z-10 flex flex-col justify-center items-center text-center px-4 sm:px-6 lg:px-8">
+      <div className="relative z-10 flex flex-col justify-center items-center text-center px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
         <div className="max-w-4xl mx-auto">
           {/* Headline */}
           <ScrollAnimation animation="fade-up">
@@ -18,8 +18,8 @@ const Hero = () => {
               >
                 Ensemble, créons les espaces qui vous ressemblent
               </h1>
-              <div className="w-20 sm:w-24 h-1 bg-orange-500 mx-auto mb-6 sm:mb-8" />
-              <p className="text-base sm:text-lg text-white/95 mb-8 max-w-2xl mx-auto">
+              <div className="w-20 sm:w-24 h-1 bg-orange-500 mx-auto mb-4 sm:mb-6" />
+              <p className="text-base sm:text-lg text-white/95 mb-6 max-w-2xl mx-auto">
                 FCR, c'est plus de 13 ans d'expertise dans le second œuvre en Île-de-France.
               </p>
             </div>
@@ -27,7 +27,7 @@ const Hero = () => {
 
           {/* CTA intro */}
           <ScrollAnimation animation="fade-up" delay={200}>
-            <div className="mb-8">
+            <div className="mb-6">
               <h2 className="text-lg sm:text-2xl font-normal text-white">
                 Découvrez nos expertises
               </h2>
@@ -36,8 +36,8 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Services — grille sans scroll, s’ajuste au nombre d’items */}
-      <div className="relative z-10 mt-4 sm:mt-8 px-4 sm:px-6 lg:px-8">
+      {/* Services — grille sans scroll, s'ajuste au nombre d'items */}
+      <div className="relative z-10 px-4 sm:px-6 lg:px-8">
         <ScrollAnimation animation="scale-in" delay={300}>
           <div className="max-w-4xl mx-auto">
             <div className="grid gap-3 sm:gap-4 [grid-template-columns:repeat(auto-fit,minmax(7.5rem,1fr))]">
