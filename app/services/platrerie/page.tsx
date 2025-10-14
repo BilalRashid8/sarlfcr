@@ -6,7 +6,25 @@ import { Phone, ChevronRight } from 'lucide-react';
 
 export default function PlatrerieService() {
   return (
-    <div className="min-h-screen bg-gray-50">
+      
+      <div className="min-h-screen bg-gray-50">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'Service',
+              serviceType: 'Plâtrerie Second Œuvre',
+              provider: {
+                '@type': 'LocalBusiness',
+                name: 'SARL FCR',
+                telephone: '+33955475101',
+                areaServed: 'Île-de-France'
+              },
+              description: 'Services de plâtrerie second œuvre : cloisons, isolation thermique et acoustique, faux-plafonds.'
+            })
+          }}
+        />
       {/* Hero Section */}
       <section
         className="text-white py-20"

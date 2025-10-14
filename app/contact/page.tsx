@@ -6,8 +6,8 @@ import { Phone, Mail, MapPin, Clock } from 'lucide-react';
 
 export default function ContactPage() {
   return (
-    <div className="min-h-screen bg-gray-50">
-      {/* SEO + JSON-LD */}
+      <div className="min-h-screen bg-gray-50">
+        {/* SEO + JSON-LD */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -150,6 +150,7 @@ export default function ContactPage() {
           </div>
         </div>
       </div>
-    </div>
+      </div>
+
   );
 }

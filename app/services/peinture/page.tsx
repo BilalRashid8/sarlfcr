@@ -6,7 +6,25 @@ import { Phone, ChevronRight } from 'lucide-react';
 
 export default function PeintureService() {
   return (
-    <div className="min-h-screen bg-gray-50">
+      
+      <div className="min-h-screen bg-gray-50">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'Service',
+              serviceType: 'Peinture Bâtiment',
+              provider: {
+                '@type': 'LocalBusiness',
+                name: 'SARL FCR',
+                telephone: '+33955475101',
+                areaServed: 'Île-de-France'
+              },
+              description: 'Services de peinture bâtiment : peinture intérieure et extérieure, décoration professionnelle.'
+            })
+          }}
+        />
       {/* Hero Section */}
       <section
         className="text-white py-20"
@@ -154,8 +172,6 @@ export default function PeintureService() {
               />
             </div>
           </div>
-
-
           {/* CTA */}
           <div className="bg-gray-100 p-8 rounded-lg border-2 text-center" style={{ borderColor: '#3e9dd3' }}>
             <h3 className="text-xl font-bold mb-4">Un projet peinture à venir ?</h3>

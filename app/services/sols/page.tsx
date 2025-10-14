@@ -6,7 +6,25 @@ import { Phone } from 'lucide-react';
 
 export default function SolsMursService() {
   return (
-    <div className="min-h-screen bg-gray-50">
+      
+      <div className="min-h-screen bg-gray-50">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'Service',
+              serviceType: 'Revêtements Sols et Murs',
+              provider: {
+                '@type': 'LocalBusiness',
+                name: 'SARL FCR',
+                telephone: '+33955475101',
+                areaServed: 'Île-de-France'
+              },
+              description: 'Services de revêtements sols et murs : carrelage, parquet, moquette, faïence.'
+            })
+          }}
+        />
       {/* Hero Section */}
       <section
         className="text-white py-20"

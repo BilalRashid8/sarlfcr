@@ -3,13 +3,13 @@
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import ScrollAnimation from '@/components/ScrollAnimation';
-import { 
+import {
   ThumbsUp,
-  Award, 
-  Users, 
-  Calendar, 
-  Shield, 
-  CheckCircle, 
+  Award,
+  Users,
+  Calendar,
+  Shield,
+  CheckCircle,
   Target,
   Heart,
   Leaf,
@@ -113,8 +113,31 @@ export default function AboutPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50">
-      {/* Hero Section */}
+      <div className="min-h-screen bg-gray-50">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'Organization',
+              name: 'SARL FCR',
+              foundingDate: '2012',
+              numberOfEmployees: 38,
+              areaServed: 'Île-de-France',
+              description: 'Expert en second œuvre BTP depuis 2012. Spécialiste de la réhabilitation en site occupé.',
+              address: {
+                '@type': 'PostalAddress',
+                streetAddress: '54 rue de la Bongarde',
+                postalCode: '92390',
+                addressLocality: 'Gennevilliers',
+                addressCountry: 'FR'
+              },
+              telephone: '+33955475101',
+              email: 'sarlfcr93700@gmail.com'
+            })
+          }}
+        />
+        {/* Hero Section */}
       <section className="text-white py-16" style={{ background: 'linear-gradient(135deg, #ffffff 0%, #3e9dd3 50%, #2980b9 100%)' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <ScrollAnimation animation="fade-up">
@@ -332,6 +355,7 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
-    </div>
+      </div>
+
   );
 }

@@ -4,10 +4,10 @@ import Link from 'next/link';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import { 
-  Calendar, 
-  MapPin, 
-  ArrowRight, 
+import {
+  Calendar,
+  MapPin,
+  ArrowRight,
   Phone,
   Building,
   Users,
@@ -62,8 +62,8 @@ export default function ProjetsPage() {
 
 
   return (
-    <div className="min-h-screen bg-gray-50">
-      {/* Hero Section */}
+      <div className="min-h-screen bg-gray-50">
+        {/* Hero Section */}
       <section className="text-white py-20" style={{ background: 'linear-gradient(135deg, #ffffff 0%, #3e9dd3 50%, #2980b9 100%)' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
@@ -135,6 +135,7 @@ export default function ProjetsPage() {
           </div>
         </div>
       </section>
-    </div>
+      </div>
+
   );
 }
