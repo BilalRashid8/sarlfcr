@@ -71,7 +71,7 @@ const Hero = () => {
               </div>
 
               <p className="text-base sm:text-xl text-white/95 leading-relaxed max-w-4xl mx-auto">
-                Depuis <strong>2012</strong>, <strong>FCR</strong> réalise en <strong>Île-de-France</strong> des travaux de <strong>second œuvre</strong>. Spécialisés en rénovation et aménagement intérieur, nous créons des <strong>espaces modernes, durables et fonctionnels</strong>. De la maçonnerie à la peinture, en passant par la menuiserie et les sols, nous garantissons <strong>qualité, sécurité et respect des délais</strong>.
+               Depuis 2012, FCR réalise en Île-de-France des travaux de second œuvre, spécialisés en rénovation et aménagement intérieur, exclusivement dans le cadre de marchés publics.
               </p>
             </div>
           </ScrollAnimation>
