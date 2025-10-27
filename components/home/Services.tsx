@@ -23,39 +23,30 @@ const services = [
     color: '#2a7ba8'
   },
   {
-    icon: <img src="/paint-roller copy.png" alt="Peinture" className="h-12 w-12" />,
-    title: 'Peinture',
-    description: 'Peinture intérieure et extérieure, décorative et de protection.',
-    features: ['Peinture murale', 'Façades', 'Décorative', 'Anti-humidité'],
-    href: '/services/peinture',
+    icon: <img src="/paint-roller copy.png" alt="Revêtements murs & sols" className="h-12 w-12" />,
+    title: 'Revêtements murs & sols',
+    description: 'Peinture, décoration et pose de revêtements pour murs et sols.',
+    features: ['Peinture', 'Carrelage', 'Parquet', 'Sols souples'],
+    href: '/services/revetements',
     image: '/Peinture/Peinture_StOuen.jpeg',
     color: '#4ba8d8'
   },
   {
-    icon: <img src="/floor copy.png" alt="Sols et Murs" className="h-12 w-12" />,
-    title: 'Sols',
-    description: 'Pose de revêtements : carrelage, parquet, faïence et papier peint.',
-    features: ['Carrelage', 'Parquet', 'Faïence', 'Papier peint'],
-    href: '/services/sols',
-    image: '/FCR_sols.png',
+    icon: <img src="/hand-saw copy.png" alt="Menuiserie & Agencement" className="h-12 w-12" />,
+    title: 'Menuiserie & Agencement',
+    description: 'Menuiserie intérieure et extérieure, aménagement sur mesure.',
+    features: ['Portes', 'Fenêtres', 'Placards', 'Aménagement'],
+    href: '/services/menuiserie-agencement',
+    image: '/Menuserie/Menuserie_Rueil.jpg',
     color: '#5bb3e3'
   },
   {
-    icon: <img src="/hand-saw copy.png" alt="Menuiserie" className="h-12 w-12" />,
-    title: 'Menuiserie',
-    description: 'Installation et rénovation de menuiseries intérieures et extérieures.',
-    features: ['Portes', 'Fenêtres', 'Placards', 'Escaliers'],
-    href: '/services/menuiserie',
-    image: '/Menuserie/Menuserie_Rueil.jpg',
-    color: '#6cbeed'
-  },
-    {
-    icon: <img src="/workspace.png" alt="Agencement" className="h-12 w-12" />,
-    title: 'Agencement',
-    description: 'Installation et rénovation de menuiseries intérieures et extérieures.',
-    features: ['Mobilier', 'Placards', 'Escaliers'],
-    href: '/services/agencement',
-    image: '/Agancement.jpg',
+    icon: <img src="/workspace.png" alt="Divers" className="h-12 w-12" />,
+    title: 'Divers',
+    description: 'Métallerie, charpente et ouvrages extérieurs spécialisés.',
+    features: ['Métallerie', 'Charpente', 'Structures', 'Patrimoine'],
+    href: '/services/divers',
+    image: '/Peinture/Peinture_Rueil (81).jpg',
     color: '#6cbeed'
   }
 ];
@@ -80,7 +71,7 @@ const Services = () => {
           </div>
         </ScrollAnimation>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
           {services.map((service, index) => (
             <ScrollAnimation key={index} animation="scale-in" delay={index * 100}>
               <div className="group relative">
