@@ -133,7 +133,7 @@ export default function AboutPage() {
                 addressCountry: 'FR'
               },
               telephone: '+33955475101',
-              email: 'sarlfcr93700@gmail.com'
+              email: 'contact@sarlfcr.fr'
             })
           }}
         />

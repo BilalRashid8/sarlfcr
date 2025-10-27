@@ -68,7 +68,7 @@ export default function RootLayout({
               '@id': 'https://www.fcr-construction.fr',
               url: 'https://www.fcr-construction.fr',
               telephone: '+33955475101',
-              email: 'sarlfcr93700@gmail.com',
+              email: 'contact@sarlfcr.fr',
               address: {
                 '@type': 'PostalAddress',
                 streetAddress: '54 rue de la Bongarde',

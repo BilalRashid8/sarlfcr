@@ -17,7 +17,7 @@ export default function ContactPage() {
             name: 'SARL FCR',
             image: '/FCR_Logo_Mono_500x500.png',
             telephone: '+33955475101',
-            email: 'sarlfcr93700@gmail.com',
+            email: 'contact@sarlfcr.fr',
             address: {
               '@type': 'PostalAddress',
               streetAddress: '54 rue de la Bongarde',

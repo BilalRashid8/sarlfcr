@@ -42,7 +42,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center">
                 <Mail className="h-4 w-4 mr-3" style={{ color: 'var(--secondary)' }} />
-                <span>sarlfcr93700@gmail.com</span>
+                <span>contact@sarlfcr.fr</span>
               </div>
               <div className="flex items-start">
                 <MapPin className="h-4 w-4 mr-3 mt-1" style={{ color: 'var(--secondary)' }} />
