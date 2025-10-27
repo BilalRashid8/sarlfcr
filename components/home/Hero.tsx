@@ -8,107 +8,23 @@ const Hero = () => {
       <div className="absolute inset-0 bg-gradient-to-br from-white via-sky-400 to-sky-700 bg-scroll md:bg-fixed bg-cover bg-center pointer-events-none" />
 
       <div className="relative z-10 flex flex-col justify-center items-center text-center px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-5xl mx-auto">
           {/* Headline */}
           <ScrollAnimation animation="fade-up">
             <div className="mb-6 sm:mb-8">
               <h1
-                className="mb-3 leading-tight text-[clamp(28px,7vw,56px)] text-balance font-bold text-white"
+                className="mb-6 leading-tight text-[clamp(28px,7vw,56px)] text-balance font-bold text-white"
                 style={{ fontFamily: 'Montserrat, sans-serif' }}
               >
                 Ensemble, créons les espaces qui vous ressemblent
               </h1>
-              <div className="w-20 sm:w-24 h-1 bg-orange-500 mx-auto mb-4 sm:mb-6" />
-              <p className="text-base sm:text-lg text-white/95 mb-6 max-w-2xl mx-auto">
-                FCR, c'est plus de 13 ans d'expertise dans le second œuvre en Île-de-France.
+              <div className="w-20 sm:w-24 h-1 bg-orange-500 mx-auto mb-6 sm:mb-8" />
+              <p className="text-base sm:text-xl text-white/95 leading-relaxed max-w-4xl mx-auto">
+                Depuis <strong>2012</strong>, <strong>FCR</strong> réalise en <strong>Île-de-France</strong> des travaux de <strong>second œuvre</strong>. Spécialisés en rénovation et aménagement intérieur, nous créons des <strong>espaces modernes, durables et fonctionnels</strong>. De la maçonnerie à la peinture, en passant par la menuiserie et les sols, nous garantissons <strong>qualité, sécurité et respect des délais</strong>.
               </p>
             </div>
           </ScrollAnimation>
-
-          {/* CTA intro */}
-          <ScrollAnimation animation="fade-up" delay={200}>
-            <div className="mb-6">
-              <h2 className="text-lg sm:text-2xl font-normal text-white">
-                Découvrez nos expertises
-              </h2>
-            </div>
-          </ScrollAnimation>
         </div>
-      </div>
-
-      {/* Services — grille sans scroll, s'ajuste au nombre d'items */}
-      <div className="relative z-10 px-4 sm:px-6 lg:px-8">
-        <ScrollAnimation animation="scale-in" delay={300}>
-          <div className="max-w-4xl mx-auto">
-            <div className="grid gap-3 sm:gap-4 [grid-template-columns:repeat(auto-fit,minmax(7.5rem,1fr))]">
-              <Link href="/services/maconnerie" className="group">
-                <div className="bg-white/10 backdrop-blur-sm p-4 rounded-lg hover:bg-white/20 transition-all duration-300 text-center h-24 flex flex-col items-center justify-center">
-                  <img
-                    src="/brickwork (1).png"
-                    alt="Maçonnerie"
-                    className="h-10 w-10 sm:h-12 sm:w-12 mb-2 filter brightness-0 invert"
-                  />
-                  <span className="text-white text-xs sm:text-sm font-medium">Maçonnerie</span>
-                </div>
-              </Link>
-
-              <Link href="/services/platrerie" className="group">
-                <div className="bg-white/10 backdrop-blur-sm p-4 rounded-lg hover:bg-white/20 transition-all duration-300 text-center h-24 flex flex-col items-center justify-center">
-                  <img
-                    src="/plastering copy.png"
-                    alt="Plâtrerie"
-                    className="h-10 w-10 sm:h-12 sm:w-12 mb-2 filter brightness-0 invert"
-                  />
-                  <span className="text-white text-xs sm:text-sm font-medium">Plâtrerie</span>
-                </div>
-              </Link>
-
-              <Link href="/services/peinture" className="group">
-                <div className="bg-white/10 backdrop-blur-sm p-4 rounded-lg hover:bg-white/20 transition-all duration-300 text-center h-24 flex flex-col items-center justify-center">
-                  <img
-                    src="/paint-roller copy.png"
-                    alt="Peinture"
-                    className="h-10 w-10 sm:h-12 sm:w-12 mb-2 filter brightness-0 invert"
-                  />
-                  <span className="text-white text-xs sm:text-sm font-medium">Peinture</span>
-                </div>
-              </Link>
-
-              <Link href="/services/sols" className="group">
-                <div className="bg-white/10 backdrop-blur-sm p-4 rounded-lg hover:bg-white/20 transition-all duration-300 text-center h-24 flex flex-col items-center justify-center">
-                  <img
-                    src="/floor copy.png"
-                    alt="Sols"
-                    className="h-10 w-10 sm:h-12 sm:w-12 mb-2 filter brightness-0 invert"
-                  />
-                  <span className="text-white text-xs sm:text-sm font-medium">Sols</span>
-                </div>
-              </Link>
-
-              <Link href="/services/menuiserie" className="group">
-                <div className="bg-white/10 backdrop-blur-sm p-4 rounded-lg hover:bg-white/20 transition-all duration-300 text-center h-24 flex flex-col items-center justify-center">
-                  <img
-                    src="/hand-saw copy.png"
-                    alt="Menuiserie"
-                    className="h-10 w-10 sm:h-12 sm:w-12 mb-2 filter brightness-0 invert"
-                  />
-                    <span className="text-white text-xs sm:text-sm font-medium">Menuiserie</span>
-                </div>
-              </Link>
-
-              <Link href="/services/agencement" className="group">
-                <div className="bg-white/10 backdrop-blur-sm p-4 rounded-lg hover:bg-white/20 transition-all duration-300 text-center h-24 flex flex-col items-center justify-center">
-                  <img
-                    src="/workspace.png"
-                    alt="Agencement"
-                    className="h-10 w-10 sm:h-12 sm:w-12 mb-2 filter brightness-0 invert"
-                  />
-                  <span className="text-white text-xs sm:text-sm font-medium">Agencement</span>
-                </div>
-              </Link>
-            </div>
-          </div>
-        </ScrollAnimation>
       </div>
     </section>
   );
