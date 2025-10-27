@@ -169,8 +169,7 @@ export default function AboutPage() {
                     Organisation performante et <strong>solutions économiques</strong>.
                   </p>
                   <p>
-                    Expertise complète : <span style={{ color: '#3e9dd3' }}>maçonnerie, plâtrerie, peinture, menuiserie, sols</span>. 
-                    Spécialité : <strong style={{ color: '#3e9dd3' }}>réhabilitation en site occupé</strong>.
+                    Expertise : <span style={{ color: '#3e9dd3' }}>Réhabilitation, Rénovation et construction neuve </span>. 
                   </p>
                   <p>
                     <strong style={{ color: '#3e9dd3' }}>38 collaborateurs qualifiés</strong>. 
