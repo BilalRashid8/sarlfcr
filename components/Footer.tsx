@@ -46,7 +46,7 @@ const Footer = () => {
               </div>
               <div className="flex items-start">
                 <MapPin className="h-4 w-4 mr-3 mt-1" style={{ color: 'var(--secondary)' }} />
-                <span>54 rue de la Bongarde<br />92390 Gennevilliers</span>
+                <span>ZI Gennevilliers</span>
               </div>
             </div>
           </div>

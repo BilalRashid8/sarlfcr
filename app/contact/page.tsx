@@ -20,7 +20,7 @@ export default function ContactPage() {
             email: 'contact@sarlfcr.fr',
             address: {
               '@type': 'PostalAddress',
-              streetAddress: '54 rue de la Bongarde',
+              streetAddress: 'ZI Gennevilliers',
               postalCode: '92390',
               addressLocality: 'Gennevilliers',
               addressCountry: 'FR',
@@ -84,8 +84,8 @@ export default function ContactPage() {
                   <div className="flex items-start">
                     <MapPin className="h-5 w-5 mr-3 mt-0.5" style={{ color: '#3e9dd3' }} />
                     <div>
-                      <p className="font-semibold text-gray-900">54 rue de la Bongarde</p>
-                      <p className="text-gray-900">92390 Gennevilliers</p>
+                      <p className="font-semibold text-gray-900">ZI Gennevilliers</p>
+                      <p className="text-gray-900">92390</p>
                       <p className="text-sm text-gray-600 mt-1">Zone d'intervention : Toute l'Île-de-France</p>
                     </div>
                   </div>
@@ -97,13 +97,13 @@ export default function ContactPage() {
                   <CardTitle className="text-gray-900 flex items-center">
                     <MapPin className="h-5 w-5 mr-2" style={{ color: '#3e9dd3' }} /> Nous trouver
                   </CardTitle>
-                  <CardDescription>54 rue de la Bongarde, 92390 Gennevilliers</CardDescription>
+                  <CardDescription>ZI Gennevilliers, 92390</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="aspect-[16/9] w-full overflow-hidden rounded-xl border">
                     <iframe
                       title="Plan d'accès FCR Gennevilliers"
-                      src={`https://www.google.com/maps?q=54%20rue%20de%20la%20Bongarde%2C%2092390%20Gennevilliers&output=embed`}
+                      src={`https://www.google.com/maps?q=ZI%20Gennevilliers%2C%2092390&output=embed`}
                       className="w-full h-full border-0"
                       loading="lazy"
                       referrerPolicy="no-referrer-when-downgrade"

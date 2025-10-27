@@ -71,7 +71,7 @@ export default function RootLayout({
               email: 'contact@sarlfcr.fr',
               address: {
                 '@type': 'PostalAddress',
-                streetAddress: '54 rue de la Bongarde',
+                streetAddress: 'ZI Gennevilliers',
                 addressLocality: 'Gennevilliers',
                 addressRegion: 'Île-de-France',
                 postalCode: '92390',

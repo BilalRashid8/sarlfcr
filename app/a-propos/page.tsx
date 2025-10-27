@@ -127,7 +127,7 @@ export default function AboutPage() {
               description: 'Expert en second œuvre BTP depuis 2012. Spécialiste de la réhabilitation en site occupé.',
               address: {
                 '@type': 'PostalAddress',
-                streetAddress: '54 rue de la Bongarde',
+                streetAddress: 'ZI Gennevilliers',
                 postalCode: '92390',
                 addressLocality: 'Gennevilliers',
                 addressCountry: 'FR'
