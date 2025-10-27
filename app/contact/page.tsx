@@ -67,7 +67,7 @@ export default function ContactPage() {
                       <p className="font-semibold text-gray-900">
                         <a href="tel:+33955475101" className="underline-offset-2 hover:underline">09 55 47 51 01</a>
                       </p>
-                      <p className="text-sm text-gray-600">Lun–Ven : 7h–18h · Sam : 8h–12h</p>
+                      <p className="text-sm text-gray-600">Lun–Ven : 7h–18h</p>
                     </div>
                   </div>
 
