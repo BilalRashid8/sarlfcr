@@ -125,8 +125,7 @@ export default function ContactPage() {
                 <CardContent>
                   <div className="space-y-2 text-sm">
                     <div className="flex justify-between"><span className="text-gray-700">Lundi – Vendredi</span><span className="font-semibold text-gray-900">7h00 – 18h00</span></div>
-                    <div className="flex justify-between"><span className="text-gray-700">Samedi</span><span className="font-semibold text-gray-900">Fermé</span></div>
-                    <div className="flex justify-between"><span className="text-gray-700">Dimanche</span><span className="text-gray-500">Fermé</span></div>
+
                     <div className="pt-2 border-t"><p className="text-xs text-gray-600">* Interventions urgentes 24h/7j sur demande</p></div>
                   </div>
                 </CardContent>
