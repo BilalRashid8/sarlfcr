@@ -9,7 +9,7 @@ const projects = [
 
   {
     id: 7,
-    title: 'Aménagement Club House TC Ménil',
+    title: 'Aménagement Club House TC Ménil de Asnières-sur-Seine',
     category: 'Sport',
     location: 'Asnières-sur-Seine (92)',
     date: '2024',
