@@ -22,7 +22,7 @@ const projects = [
 
     {
 id: 8,
-      title: 'Réaménagement de la médiathèque de Meudon-la-Fôret',
+      title: 'Réaménagement de la Police Municipale et de la médiathèque de Meudon-la-Fôret',
       category: 'Culture',
       location: 'Meudon-la-Fôret (92)',
       date: '2024',
