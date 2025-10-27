@@ -57,10 +57,9 @@ const Footer = () => {
             <ul className="space-y-2">
               <li><Link href="/services/maconnerie" className="text-white opacity-80 hover:opacity-100 transition-opacity">Maçonnerie</Link></li>
               <li><Link href="/services/platrerie" className="text-white opacity-80 hover:opacity-100 transition-opacity">Plâtrerie</Link></li>
-              <li><Link href="/services/peinture" className="text-white opacity-80 hover:opacity-100 transition-opacity">Peinture</Link></li>
-              <li><Link href="/services/sols" className="text-white opacity-80 hover:opacity-100 transition-opacity">Sols</Link></li>
-              <li><Link href="/services/menuiserie" className="text-white opacity-80 hover:opacity-100 transition-opacity">Menuiserie</Link></li>
-              <li><Link href="/services/agencement" className="text-white opacity-80 hover:opacity-100 transition-opacity">agencement</Link></li>
+              <li><Link href="/services/revetements" className="text-white opacity-80 hover:opacity-100 transition-opacity">Revêtements murs & sols</Link></li>
+              <li><Link href="/services/menuiserie-agencement" className="text-white opacity-80 hover:opacity-100 transition-opacity">Menuiserie & Agencement</Link></li>
+              <li><Link href="/services/divers" className="text-white opacity-80 hover:opacity-100 transition-opacity">Divers</Link></li>
             </ul>
           </div>
         </div>
