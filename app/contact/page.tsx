@@ -75,7 +75,7 @@ export default function ContactPage() {
                     <Mail className="h-5 w-5 mr-3 mt-0.5" style={{ color: '#3e9dd3' }} />
                     <div>
                       <p className="font-semibold text-gray-900">
-                        <a href="mailto:sarlfcr93700@gmail.com" className="underline-offset-2 hover:underline">sarlfcr93700@gmail.com</a>
+                        <a href="mailto:contact@sarlfcr.fr" className="underline-offset-2 hover:underline">contact@sarlfcr.fr</a>
                       </p>
                       <p className="text-sm text-gray-600">Réponse sous 2h en moyenne</p>
                     </div>
