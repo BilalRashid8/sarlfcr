@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Phone } from 'lucide-react';
+import ImageCarousel from '@/components/ImageCarousel';
 
 export default function MaconnerieService() {
   return (
@@ -42,10 +43,12 @@ export default function MaconnerieService() {
                 </div>
               </div>
               <div>
-                <img
-                  src="https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
+                <ImageCarousel
+                  images={[
+                    'https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop',
+                    'https://images.pexels.com/photos/5691598/pexels-photo-5691598.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop'
+                  ]}
                   alt="Travaux de maçonnerie professionnels"
-                  className="w-full h-80 object-cover rounded-lg shadow-lg"
                 />
               </div>
             </div>
@@ -54,10 +57,12 @@ export default function MaconnerieService() {
           <div className="mb-20">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
               <div className="order-2 lg:order-1">
-                <img
-                  src="https://images.pexels.com/photos/5691598/pexels-photo-5691598.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
+                <ImageCarousel
+                  images={[
+                    'https://images.pexels.com/photos/5691598/pexels-photo-5691598.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop',
+                    'https://images.pexels.com/photos/6492403/pexels-photo-6492403.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop'
+                  ]}
                   alt="Réalisation de chappe"
-                  className="w-full h-80 object-cover rounded-lg shadow-lg"
                 />
               </div>
               <div className="order-1 lg:order-2">
@@ -88,10 +93,12 @@ export default function MaconnerieService() {
                 </div>
               </div>
               <div>
-                <img
-                  src="https://images.pexels.com/photos/5691617/pexels-photo-5691617.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
+                <ImageCarousel
+                  images={[
+                    'https://images.pexels.com/photos/5691617/pexels-photo-5691617.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop',
+                    '/Maconnerie.png'
+                  ]}
                   alt="Reprise en sous-œuvre"
-                  className="w-full h-80 object-cover rounded-lg shadow-lg"
                 />
               </div>
             </div>
@@ -100,10 +107,12 @@ export default function MaconnerieService() {
           <div className="mb-20">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
               <div className="order-2 lg:order-1">
-                <img
-                  src="https://images.pexels.com/photos/6492403/pexels-photo-6492403.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
+                <ImageCarousel
+                  images={[
+                    'https://images.pexels.com/photos/6492403/pexels-photo-6492403.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop',
+                    'https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop'
+                  ]}
                   alt="Pose de renfort"
-                  className="w-full h-80 object-cover rounded-lg shadow-lg"
                 />
               </div>
               <div className="order-1 lg:order-2">
@@ -134,10 +143,12 @@ export default function MaconnerieService() {
                 </div>
               </div>
               <div>
-                <img
-                  src="/Maconnerie.png"
+                <ImageCarousel
+                  images={[
+                    '/Maconnerie.png',
+                    'https://images.pexels.com/photos/5691617/pexels-photo-5691617.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop'
+                  ]}
                   alt="Ouverture de mur porteur"
-                  className="w-full h-80 object-cover rounded-lg shadow-lg"
                 />
               </div>
             </div>

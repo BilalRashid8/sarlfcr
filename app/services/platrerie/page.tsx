@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Phone } from 'lucide-react';
+import ImageCarousel from '@/components/ImageCarousel';
 
 export default function PlatrerieService() {
   return (
@@ -42,10 +43,13 @@ export default function PlatrerieService() {
                 </div>
               </div>
               <div>
-                <img
-                  src="/Platerie/Platerie_Rueil (13).jpg"
+                <ImageCarousel
+                  images={[
+                    '/Platerie/Platerie_Rueil (13).jpg',
+                    '/Platerie/Platerie_Meudon (15).jpg',
+                    '/Platerie/Platerie_Meudon (20).jpg'
+                  ]}
                   alt="Travaux de plâtrerie professionnels"
-                  className="w-full h-80 object-cover rounded-lg shadow-lg"
                 />
               </div>
             </div>
@@ -54,10 +58,13 @@ export default function PlatrerieService() {
           <div className="mb-20">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
               <div className="order-2 lg:order-1">
-                <img
-                  src="/Platerie/Platerie_Meudon (20).jpg"
+                <ImageCarousel
+                  images={[
+                    '/Platerie/Platerie_Meudon (20).jpg',
+                    '/Platerie/Platerie_Rueil (13).jpg',
+                    '/Platerie/Platerie_Meudon (15).jpg'
+                  ]}
                   alt="ITI Isolation thermique par intérieur"
-                  className="w-full h-80 object-cover rounded-lg shadow-lg"
                 />
               </div>
               <div className="order-1 lg:order-2">
@@ -92,10 +99,12 @@ export default function PlatrerieService() {
                 </div>
               </div>
               <div>
-                <img
-                  src="/Platerie/Platerie_Rueil (59).jpg"
+                <ImageCarousel
+                  images={[
+                    '/Platerie/Platerie_Rueil (59).jpg',
+                    '/Platerie/Platerie_Meudon (35).jpg'
+                  ]}
                   alt="Cloisonnements phoniques"
-                  className="w-full h-80 object-cover rounded-lg shadow-lg"
                 />
               </div>
             </div>
@@ -104,10 +113,13 @@ export default function PlatrerieService() {
           <div className="mb-20">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
               <div className="order-2 lg:order-1">
-                <img
-                  src="/Platerie/Platerie_Meudon (35).jpg"
+                <ImageCarousel
+                  images={[
+                    '/Platerie/Platerie_Meudon (35).jpg',
+                    '/Platerie/Platerie_Rueil (59).jpg',
+                    '/Platerie/Platerie_Meudon (20).jpg'
+                  ]}
                   alt="Faux plafonds"
-                  className="w-full h-80 object-cover rounded-lg shadow-lg"
                 />
               </div>
               <div className="order-1 lg:order-2">

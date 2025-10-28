@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Phone } from 'lucide-react';
+import ImageCarousel from '@/components/ImageCarousel';
 
 export default function SolsMursService() {
   return (
@@ -72,10 +73,13 @@ export default function SolsMursService() {
             </div>
 
             <div>
-              <img
-                src="/Sols/Sols_Meudon.jpg"
+              <ImageCarousel
+                images={[
+                  '/Sols/Sols_Meudon.jpg',
+                  '/Sols/Sols_Rueil (30).jpg',
+                  '/Sols/Sols_Rueil (35).jpg'
+                ]}
                 alt="Travaux de sols et murs professionnels"
-                className="w-full h-80 object-cover rounded-lg shadow-lg"
               />
             </div>
           </div>
@@ -83,10 +87,12 @@ export default function SolsMursService() {
           {/* Catégorie 1 : Sol dur */}
           <div id="sol-dur" className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="order-2 lg:order-1">
-              <img
-                src="/Sols/Sols_Rueil (30).jpg"
+              <ImageCarousel
+                images={[
+                  '/Sols/Sols_Rueil (30).jpg',
+                  '/Sols/Sols_Meudon.jpg'
+                ]}
                 alt="Sol dur : carrelage et pierre"
-                className="w-full h-80 object-cover rounded-lg shadow-lg"
               />
             </div>
             <div className="order-1 lg:order-2">
@@ -118,10 +124,12 @@ export default function SolsMursService() {
               </p>
             </div>
             <div>
-              <img
-                src="/Sols/Sols_Rueil (35).jpg"
+              <ImageCarousel
+                images={[
+                  '/Sols/Sols_Rueil (35).jpg',
+                  '/Sols/Sols_Rueil (30).jpg'
+                ]}
                 alt="Sol souple : LVT et linoléum"
-                className="w-full h-80 object-cover rounded-lg shadow-lg"
               />
             </div>
           </div>

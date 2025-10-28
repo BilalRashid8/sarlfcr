@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Phone } from 'lucide-react';
+import ImageCarousel from '@/components/ImageCarousel';
 
 export default function AmenagementService() {
   return (
@@ -73,10 +74,12 @@ export default function AmenagementService() {
             </div>
 
             <div>
-              <img
-                src="/Agancement/Agancement_Meudon (2).jpg"
-                alt="Travaux de sols et murs professionnels"
-                className="w-full h-80 object-cover rounded-lg shadow-lg"
+              <ImageCarousel
+                images={[
+                  '/Agancement/Agancement_Meudon (2).jpg',
+                  '/Agancement/Agancement_Meudon (24).jpg'
+                ]}
+                alt="Travaux d'agencement professionnels"
               />
             </div>
           </div>
@@ -85,10 +88,12 @@ export default function AmenagementService() {
           <div className="mb-20">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
               <div className="order-2 lg:order-1">
-                <img
-                  src="/Agancement/Agancement_Meudon (24).jpg"
-                  alt="Optimisation de l’espace intérieur"
-                  className="w-full h-80 object-cover rounded-lg shadow-lg"
+                <ImageCarousel
+                  images={[
+                    '/Agancement/Agancement_Meudon (24).jpg',
+                    '/Agancement/Agancement_Meudon (2).jpg'
+                  ]}
+                  alt="Optimisation de l'espace intérieur"
                 />
               </div>
 

@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Phone } from 'lucide-react';
+import ImageCarousel from '@/components/ImageCarousel';
 
 export default function MenuiserieAgencementService() {
   return (
@@ -42,10 +43,13 @@ export default function MenuiserieAgencementService() {
                 </div>
               </div>
               <div>
-                <img
-                  src="/Menuserie/Menuserie_Rueil.jpg"
+                <ImageCarousel
+                  images={[
+                    '/Menuserie/Menuserie_Rueil.jpg',
+                    '/Menuserie/Menuserie_Meudon (4).jpg',
+                    '/Menuserie/Menuserie_Meudon (87).jpg'
+                  ]}
                   alt="Travaux de menuiserie professionnels"
-                  className="w-full h-80 object-cover rounded-lg shadow-lg"
                 />
               </div>
             </div>
@@ -54,10 +58,12 @@ export default function MenuiserieAgencementService() {
           <div className="mb-20">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
               <div className="order-2 lg:order-1">
-                <img
-                  src="/Menuserie/Menuserie_Meudon (4).jpg"
+                <ImageCarousel
+                  images={[
+                    '/Menuserie/Menuserie_Meudon (4).jpg',
+                    '/Menuserie/Menuserie_Rueil.jpg'
+                  ]}
                   alt="Menuiserie bloc portes et châssis vitrés"
-                  className="w-full h-80 object-cover rounded-lg shadow-lg"
                 />
               </div>
               <div className="order-1 lg:order-2">
@@ -89,10 +95,12 @@ export default function MenuiserieAgencementService() {
                 </div>
               </div>
               <div>
-                <img
-                  src="/Menuserie/Menuserie_Meudon (87).jpg"
+                <ImageCarousel
+                  images={[
+                    '/Menuserie/Menuserie_Meudon (87).jpg',
+                    '/Menuserie/Menuserie_Meudon (4).jpg'
+                  ]}
                   alt="Cloisons amovibles"
-                  className="w-full h-80 object-cover rounded-lg shadow-lg"
                 />
               </div>
             </div>
@@ -101,10 +109,12 @@ export default function MenuiserieAgencementService() {
           <div className="mb-20">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
               <div className="order-2 lg:order-1">
-                <img
-                  src="/Agancement/Agancement_Meudon (2).jpg"
+                <ImageCarousel
+                  images={[
+                    '/Agancement/Agancement_Meudon (2).jpg',
+                    '/Agancement/Agancement_Meudon (24).jpg'
+                  ]}
                   alt="Agencement sur mesure"
-                  className="w-full h-80 object-cover rounded-lg shadow-lg"
                 />
               </div>
               <div className="order-1 lg:order-2">

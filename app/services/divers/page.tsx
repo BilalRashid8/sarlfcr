@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Phone } from 'lucide-react';
+import ImageCarousel from '@/components/ImageCarousel';
 
 export default function DiversService() {
   return (
@@ -42,10 +43,13 @@ export default function DiversService() {
                 </div>
               </div>
               <div>
-                <img
-                  src="/Peinture/Peinture_Rueil (81).jpg"
+                <ImageCarousel
+                  images={[
+                    '/Peinture/Peinture_Rueil (81).jpg',
+                    '/Menuserie/Menuserie_Meudon (4).jpg',
+                    '/Peinture/Peinture_Rueil (50).jpg'
+                  ]}
                   alt="Services divers professionnels"
-                  className="w-full h-80 object-cover rounded-lg shadow-lg"
                 />
               </div>
             </div>
@@ -54,10 +58,12 @@ export default function DiversService() {
           <div className="mb-20">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
               <div className="order-2 lg:order-1">
-                <img
-                  src="/Menuserie/Menuserie_Meudon (4).jpg"
+                <ImageCarousel
+                  images={[
+                    '/Menuserie/Menuserie_Meudon (4).jpg',
+                    '/Menuserie/Menuserie_Meudon (87).jpg'
+                  ]}
                   alt="Serrurerie garde-corps"
-                  className="w-full h-80 object-cover rounded-lg shadow-lg"
                 />
               </div>
               <div className="order-1 lg:order-2">
@@ -89,10 +95,12 @@ export default function DiversService() {
                 </div>
               </div>
               <div>
-                <img
-                  src="/Peinture/Peinture_Rueil (50).jpg"
+                <ImageCarousel
+                  images={[
+                    '/Peinture/Peinture_Rueil (50).jpg',
+                    '/Peinture/Peinture_Rueil (35).jpg'
+                  ]}
                   alt="Signalétiques"
-                  className="w-full h-80 object-cover rounded-lg shadow-lg"
                 />
               </div>
             </div>
@@ -101,10 +109,12 @@ export default function DiversService() {
           <div className="mb-20">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
               <div className="order-2 lg:order-1">
-                <img
-                  src="/Menuserie/Menuserie_Meudon (87).jpg"
+                <ImageCarousel
+                  images={[
+                    '/Menuserie/Menuserie_Meudon (87).jpg',
+                    '/Menuserie/Menuserie_Rueil.jpg'
+                  ]}
                   alt="Menuiserie extérieure"
-                  className="w-full h-80 object-cover rounded-lg shadow-lg"
                 />
               </div>
               <div className="order-1 lg:order-2">
@@ -135,10 +145,12 @@ export default function DiversService() {
                 </div>
               </div>
               <div>
-                <img
-                  src="/Peinture/Peinture_Rueil (35).jpg"
+                <ImageCarousel
+                  images={[
+                    '/Peinture/Peinture_Rueil (35).jpg',
+                    '/Peinture/Peinture_Rueil (81).jpg'
+                  ]}
                   alt="Électricité et plomberie"
-                  className="w-full h-80 object-cover rounded-lg shadow-lg"
                 />
               </div>
             </div>
