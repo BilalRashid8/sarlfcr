@@ -7,7 +7,6 @@ import { ArrowRight, Calendar, MapPin } from 'lucide-react';
 import ScrollAnimation from '@/components/ScrollAnimation';
 
 const projects = [
-
   {
     id: 7,
     title: 'Aménagement Club House TC Ménil de Asnières-sur-Seine',
@@ -20,37 +19,70 @@ const projects = [
     surface: '300m²',
     duration: '8 semaines'
   },
-
-    {
-id: 8,
-      title: 'Réaménagement de la Police Municipale et de la médiathèque de Meudon-la-Fôret',
-      category: 'Culture',
-      location: 'Meudon-la-Fôret (92)',
-      date: '2024',
-      image: '/Peinture/Peinture_Meudon.jpg',
-      description: 'Réaménagement complet de la médiathèque de Meudon avec création d’espaces d’accueil, d’espaces de lecture et de zones de détente.',
-      tags: ['Aménagement', 'Menuiserie', 'Sols', 'Plafonds'],
-      surface: '300m²',
-      duration: '8 semaines',
-      client: 'Médiathèque de Meudon',
-      details: 'Rénovation complète avec création d\'espaces modernes et fonctionnels pour les citoyen de la ville.'
-    },
-            {
-      id: 9,
-      title: 'Aménagement de la Hall Gourmande à Rueil-Malmaison',
-      category: 'Restauration',
-      location: 'Rueil-Malmaion (92)',
-      date: '2024',
-      image: '/Rueil/Chantier Rueil - Prise de vue 29 09 2025 (2).jpg',
-      description: 'Réaménagement complet de la halle gourmande de Rueil-Malmaison avec création d’espaces d’accueil, d’espaces de restauration et de zones de dégustation.',
-      tags: ['Aménagement', 'Menuiserie', 'Sols', 'Plafonds'],
-      surface: '300m²',
-      duration: '8 semaines',
-      client: 'Tennis Club de Ménil',
-      details: 'Rénovation complète avec création d\'espaces modernes et fonctionnels pour les membres du club.'
-    }
-
-
+  {
+    id: 8,
+    title: 'Réaménagement de la Police Municipale et de la médiathèque de Meudon-la-Fôret',
+    category: 'Culture',
+    location: 'Meudon-la-Fôret (92)',
+    date: '2024',
+    image: '/Peinture/Peinture_Meudon.jpg',
+    description: 'Réaménagement complet de la médiathèque de Meudon avec création d\'espaces d\'accueil, d\'espaces de lecture et de zones de détente.',
+    tags: ['Aménagement', 'Menuiserie', 'Sols', 'Plafonds'],
+    surface: '300m²',
+    duration: '8 semaines',
+    client: 'Médiathèque de Meudon',
+    details: 'Rénovation complète avec création d\'espaces modernes et fonctionnels pour les citoyen de la ville.'
+  },
+  {
+    id: 9,
+    title: 'Aménagement de la Hall Gourmande à Rueil-Malmaison',
+    category: 'Restauration',
+    location: 'Rueil-Malmaion (92)',
+    date: '2024',
+    image: '/Rueil/Chantier Rueil - Prise de vue 29 09 2025 (2).jpg',
+    description: 'Réaménagement complet de la halle gourmande de Rueil-Malmaison avec création d\'espaces d\'accueil, d\'espaces de restauration et de zones de dégustation.',
+    tags: ['Aménagement', 'Menuiserie', 'Sols', 'Plafonds'],
+    surface: '300m²',
+    duration: '8 semaines',
+    client: 'Tennis Club de Ménil',
+    details: 'Rénovation complète avec création d\'espaces modernes et fonctionnels pour les membres du club.'
+  },
+  {
+    id: 10,
+    title: 'Projet 10 - À compléter',
+    category: 'À définir',
+    location: 'Île-de-France',
+    date: '2024',
+    image: '/placeholder-project.jpg',
+    description: 'Description du projet à compléter.',
+    tags: ['Tag1', 'Tag2'],
+    surface: 'À définir',
+    duration: 'À définir'
+  },
+  {
+    id: 11,
+    title: 'Projet 11 - À compléter',
+    category: 'À définir',
+    location: 'Île-de-France',
+    date: '2024',
+    image: '/placeholder-project.jpg',
+    description: 'Description du projet à compléter.',
+    tags: ['Tag1', 'Tag2'],
+    surface: 'À définir',
+    duration: 'À définir'
+  },
+  {
+    id: 12,
+    title: 'Projet 12 - À compléter',
+    category: 'À définir',
+    location: 'Île-de-France',
+    date: '2024',
+    image: '/placeholder-project.jpg',
+    description: 'Description du projet à compléter.',
+    tags: ['Tag1', 'Tag2'],
+    surface: 'À définir',
+    duration: 'À définir'
+  }
 ];
 
 const Projects = () => {
@@ -69,7 +101,7 @@ const Projects = () => {
           </div>
         </ScrollAnimation>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           {projects.map((project) => (
             <ScrollAnimation key={project.id} animation="scale-in" delay={(project.id - 1) * 100}>
               <div className="group relative overflow-hidden rounded-lg hover:shadow-xl transition-all duration-300">
