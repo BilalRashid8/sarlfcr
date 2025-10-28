@@ -56,7 +56,7 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4 text-white" style={{ fontFamily: 'Montserrat, sans-serif' }}>Nos Services</h3>
             <ul className="space-y-2">
               <li><Link href="/services/maconnerie" className="text-white opacity-80 hover:opacity-100 transition-opacity">Maçonnerie</Link></li>
-              <li><Link href="/services/platrerie" className="text-white opacity-80 hover:opacity-100 transition-opacity">Plâtrerie</Link></li>
+              <li><Link href="/services/platrerie" className="text-white opacity-80 hover:opacity-100 transition-opacity">Plâtrerie & Faux Plafond</Link></li>
               <li><Link href="/services/revetements" className="text-white opacity-80 hover:opacity-100 transition-opacity">Revêtements murs & sols</Link></li>
               <li><Link href="/services/menuiserie-agencement" className="text-white opacity-80 hover:opacity-100 transition-opacity">Menuiserie & Agencement</Link></li>
               <li><Link href="/services/divers" className="text-white opacity-80 hover:opacity-100 transition-opacity">Divers</Link></li>

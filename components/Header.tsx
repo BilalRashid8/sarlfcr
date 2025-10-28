@@ -28,7 +28,7 @@ const Header = () => {
 
   const servicesItems = [
     { href: '/services/maconnerie', label: 'Maçonnerie' },
-    { href: '/services/platrerie', label: 'Plâtrerie' },
+    { href: '/services/platrerie', label: 'Plâtrerie & Faux Plafond' },
     { href: '/services/revetements', label: 'Revêtements murs & sols' },
     { href: '/services/menuiserie-agencement', label: 'Menuiserie & Agencement' },
     { href: '/services/divers', label: 'Divers' },
