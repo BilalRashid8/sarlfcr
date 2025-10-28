@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
@@ -73,10 +74,13 @@ const Projects = () => {
             <ScrollAnimation key={project.id} animation="scale-in" delay={(project.id - 1) * 100}>
               <div className="group relative overflow-hidden rounded-lg hover:shadow-xl transition-all duration-300">
               <div className="relative h-64">
-                <img
+                <Image
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover transition-transform duration-300 group-hover:scale-105"
+                  quality={75}
                 />
                 
                 {/* Hover overlay */}

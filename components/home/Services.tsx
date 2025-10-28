@@ -1,11 +1,12 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import ScrollAnimation from '@/components/ScrollAnimation';
 
 const services = [
   {
-    icon: <img src="/brickwork (1).png" alt="Maçonnerie" className="h-12 w-12" />,
+    icon: <Image src="/brickwork (1).png" alt="Maçonnerie" width={48} height={48} quality={75} />,
     title: 'Maçonnerie',
     description: 'Construction, réparation et rénovation de murs, cloisons et structures maçonnées.',
     features: ['Murs porteurs', 'Cloisons', 'Réparations', 'Enduits'],
@@ -14,7 +15,7 @@ const services = [
     color: '#3e9dd3'
   },
   {
-    icon: <img src="/plastering copy.png" alt="Plâtrerie" className="h-12 w-12" />,
+    icon: <Image src="/plastering copy.png" alt="Plâtrerie" width={48} height={48} quality={75} />,
     title: 'Plâtrerie',
     description: 'Pose et finition de placo, isolation et aménagement intérieur.',
     features: ['Placo BA13', 'Isolation', 'Faux plafonds', 'Cloisons amovibles'],
@@ -23,7 +24,7 @@ const services = [
     color: '#2a7ba8'
   },
   {
-    icon: <img src="/paint-roller copy.png" alt="Revêtements murs & sols" className="h-12 w-12" />,
+    icon: <Image src="/paint-roller copy.png" alt="Revêtements murs & sols" width={48} height={48} quality={75} />,
     title: 'Revêtements murs & sols',
     description: 'Peinture, décoration et pose de revêtements pour murs et sols.',
     features: ['Peinture', 'Carrelage', 'Parquet', 'Sols souples'],
@@ -32,7 +33,7 @@ const services = [
     color: '#4ba8d8'
   },
   {
-    icon: <img src="/hand-saw copy.png" alt="Menuiserie & Agencement" className="h-12 w-12" />,
+    icon: <Image src="/hand-saw copy.png" alt="Menuiserie & Agencement" width={48} height={48} quality={75} />,
     title: 'Menuiserie & Agencement',
     description: 'Menuiserie intérieure et extérieure, aménagement sur mesure.',
     features: ['Portes', 'Fenêtres', 'Placards', 'Aménagement'],
@@ -41,7 +42,7 @@ const services = [
     color: '#5bb3e3'
   },
   {
-    icon: <img src="/workspace.png" alt="Divers" className="h-12 w-12" />,
+    icon: <Image src="/workspace.png" alt="Divers" width={48} height={48} quality={75} />,
     title: 'Divers',
     description: 'Métallerie, charpente et ouvrages extérieurs spécialisés.',
     features: ['Métallerie', 'Charpente', 'Structures', 'Patrimoine'],
