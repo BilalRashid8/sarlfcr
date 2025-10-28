@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import Image from 'next/image';
 import ScrollAnimation from '@/components/ScrollAnimation';
 
 const Hero = () => {
@@ -28,12 +29,22 @@ const Hero = () => {
         {images.map((img, index) => (
           <div
             key={img}
-            className="absolute inset-0 bg-cover bg-center transition-opacity duration-1000"
+            className="absolute inset-0 transition-opacity duration-1000"
             style={{
-              backgroundImage: `url(${img})`,
               opacity: currentImageIndex === index ? 1 : 0,
             }}
-          />
+          >
+            <Image
+              src={img}
+              alt="Réalisations FCR"
+              fill
+              sizes="100vw"
+              className="object-cover"
+              quality={75}
+              priority={index === 0}
+              loading={index === 0 ? 'eager' : 'lazy'}
+            />
+          </div>
         ))}
         {/* Overlay gradient */}
         <div className="absolute inset-0 bg-gradient-to-br from-black/60 via-sky-900/70 to-sky-700/80" />

@@ -1,9 +1,10 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { Button } from '@/components/ui/button';
-import { 
-  ArrowLeft, 
+import {
+  ArrowLeft,
   ChevronRight,
   X,
   ChevronLeft
@@ -108,15 +109,18 @@ export default function ClubHouseProject() {
             <div className="mb-12">
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {projectImages.map((image, index) => (
-                  <div 
-                    key={index} 
-                    className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer"
+                  <div
+                    key={index}
+                    className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer h-64"
                     onClick={() => openLightbox(index)}
                   >
-                    <img
+                    <Image
                       src={image.src}
                       alt={image.alt}
-                      className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+                      fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                      className="object-cover transition-transform duration-300 group-hover:scale-105"
+                      quality={75}
                     />
                     <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 flex items-center justify-center">
                       <div className="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
